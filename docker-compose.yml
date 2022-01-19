@@ -42,6 +42,8 @@ volumes:
   consul-config:
   consul-data:
   vault-config:
+    external: true
+    name: vault_config
   vault-policies:
   vault-data:
   vault-logs:
