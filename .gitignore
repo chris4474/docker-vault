@@ -2,4 +2,5 @@ conf/tls/mutual_tls/*
 conf/tls/root_ca/*
 conf/tls/signed_cert/*
 conf/tls/client_cert/*
+!conf/vault/*
 !conf/vault/vault-config.json
