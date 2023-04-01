@@ -1,5 +1,5 @@
 {
-  "backend": {
+  "storage": {
     "consul": {
       "address": "consul:8500",
       "path": "vault/"
@@ -8,7 +8,10 @@
   "listener": {
     "tcp":{
       "address": "0.0.0.0:8200",
-      "tls_disable": 1
+      "tls_disable": 0,
+      "tls_disable_client_certs": 1,
+      "tls_cert_file": "/vault/config/cert.pem",
+      "tls_key_file": "/vault/config/key.pem"
     }
   },
   "ui": true
